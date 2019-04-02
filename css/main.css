@@ -1,0 +1,144 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #6d6d6d;
+}
+.container {
+    box-shadow: 2px 2px 6px rgba(155,155,155,.2);
+    border-radius: 25px;
+    height: 670px;
+    position: relative;
+}
+
+/* ************** Landing Page ***************  */
+.my-name {
+    position: absolute;
+    top: 36%;
+    left: 33%;
+    font-size: 80px;
+    text-align: center;
+}
+
+.subheading {
+    position: absolute;
+    top: 46%;
+    left: 35%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.enter {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    font-size: 35px;
+    width: 180px;
+    border: solid blue 1px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ***************** About Page *************** */
+
+header {
+    /* background-color: yellow; */
+    position: relative;
+    padding: 20px 0;
+}
+.nav-icons { 
+    list-style-type: none;
+    margin-left: 11.5%;
+    font-size: 20px;
+}
+.nav-icons li {
+    display: inline;
+    padding-left: 10px;
+}
+
+nav {
+    position: absolute;
+    left: 71.5%;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+.profile-img {
+    margin-left: 45%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 1px rgba(155,155,155,.2);
+}
+
+.info {
+    text-align: center;
+    width: 1000px;
+}
+
+.about-desc {
+    font-size: 18px;
+}
+.skills {
+    background-color: yellow;
+    width: 1000px;
+    height: 250px;
+    box-shadow: 2px 2px 6px rgba(155,155,155,.2);
+    border-radius: 20px;
+    background-color: #C9C9C9;
+    display: flex;
+    flex-direction: column;
+}
+
+.first,
+.second {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: inherit;
+}
+
+.one,
+.two{
+    flex: 1;
+    height: 25px;
+    text-transform: uppercase;
+}
+
+.html,
+.css,
+.react,
+.ruby {
+    border-right: solid 1px white;
+}
+
+.sub-about {
+    font-size: 18px;
+    color: #adadad;
+}
+
+.name-about {
+    font-size:36px;
+}
+
+a {
+    /* color: black; */
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
+.skills {
+    color: white;
+}
