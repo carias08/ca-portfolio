@@ -6,7 +6,7 @@
     <title>Claudia Arias Portfolio - About</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <script src="main.js" defer></script>
 </head>
@@ -14,9 +14,11 @@
     <div class="container">
         <header>
             <nav>
-                <ul>
+                <i class="fas fa-bars" onClick="launch()"></i>
+                <ul class="pro-nav" id="pro-nav">
+                    <li><button type="button" class="close">&times;</button></li>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html" class="current-projects">Projects</a></li>
                 </ul>
             </nav>
             <ul class="nav-icons">
@@ -26,8 +28,63 @@
                 <li>
                     <a href="https://www.facebook.com/in/" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 </li>
+                <li>
+                    <a href="mailto:ca9488@gmail.com" target="_top"><i class="far fa-envelope"></i></a>
+                </li>
             </ul>
         </header>
+
+        <h1 class="pro-title"> Projects </h1>
+        <main class="projects">
+            <div class="pro-one">
+                <div class="project">
+                    <div class="pro-info">
+                        <h3>jsjhdncjdjcfbvbfh</h3>
+                        <p>atdgsyhkojlkhgfd sgdhfjgkhlj,mnthbrdgsyuhjikfnhd</p>
+                        <button type="button">Click me</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro-info">
+                        <h3>jsjhdncjdjcfbvbfh</h3>
+                        <p>atdgsyhkojlkhgfd sgdhfjgkhlj,mnthbrdgsyuhjikfnhd</p>
+                        <button type="button">Click me</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-two">
+                <div class="project">
+                    <div class="pro-info">
+                        <h3>jsjhdncjdjcfbvbfh</h3>
+                        <p>atdgsyhkojlkhgfd sgdhfjgkhlj,mnthbrdgsyuhjikfnhd</p>
+                        <button type="button">Click me</button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro-info">
+                        <h3>jsjhdncjdjcfbvbfh</h3>
+                        <p>atdgsyhkojlkhgfd sgdhfjgkhlj,mnthbrdgsyuhjikfnhd</p>
+                        <button type="button">Click me</button>
+                    </div>      
+                </div>
+            </div>
+        </main>
     </div>
 </body>
+
+<script>
+    let menu = document.getElementById('pro-nav');
+    var close = document.getElementsByClassName("close")[0];
+
+    let launch = () => {
+        menu.style.display = "block"; 
+        close.style.display = "block"; 
+    }
+
+    close.onclick = function() {
+        menu.style.display = "none";
+        close.style.display = "none"; 
+    }
+</script>
 </html>

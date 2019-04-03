@@ -6,16 +6,19 @@
     <title>Claudia Arias Portfolio - About</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <nav class="nav">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
+            <nav>
+                <i class="fas fa-bars" onClick="launch()"></i>
+                <!-- <span class="close">&times;</span> -->
+                    <ul class="about-nav" id="about-nav">
+                        <li><button type="button"class="close">&times;</button></li>
+                        <li><a href="about.html" class="current-about">About</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                     </ul>
                 </nav>
@@ -25,6 +28,9 @@
                 </li>
                 <li>
                     <a href="https://www.facebook.com/in/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:ca9488@gmail.com" target="_top"><i class="far fa-envelope"></i></a>
                 </li>
             </ul>
         </header>
@@ -42,7 +48,7 @@
                 <div class="first">
                     <p class="one html">HTML</p>
                     <p class="one css">CSS</p>
-                    <p class="one">Javascript</p>
+                    <p class="one javascript">Javascript</p>
                 </div>
                 <div class="second">
                     <p class="two react">React.js</p>
@@ -53,4 +59,20 @@
         </main>
     </div>
 </body>
+
+<script>
+    let menu = document.getElementById('about-nav');
+    let close = document.getElementsByClassName("close")[0];
+
+    let launch = () => {
+        menu.style.display = "block"; 
+        close.style.display = "block"; 
+    }
+
+    close.onclick = function() {
+        menu.style.display = "none";
+        close.style.display = "none"; 
+    }
+</script>
+
 </html>
